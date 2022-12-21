@@ -1,0 +1,32 @@
+app = ""
+kill_signal = "SIGINT"
+kill_timeout = 5
+processes = []
+
+[env]
+  RTSP_PROTOCOLS = "tcp"
+
+[experimental]
+  allowed_public_ports = []
+  auto_rollback = true
+
+[[services]]
+  internal_port = 8554
+  protocol = "tcp"
+
+  [[services.ports]]
+    port = 554
+
+[[services]]
+  internal_port = 1935
+  protocol = "tcp"
+
+  [[services.ports]]
+    port = 1935
+
+[[services]]
+  internal_port = 8888
+  protocol = "tcp"
+
+  [[services.ports]]
+    port = "8888"
