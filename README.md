@@ -1,4 +1,4 @@
-Run a [RTSP server](https://github.com/aler9/rtsp-simple-server) on fly.io, for free!
+Run an [RTSP server](https://github.com/aler9/rtsp-simple-server) on fly.io, for free!
 
 This repo comes with a few RTSP streams published using GStreamer and FFmpeg as examples. Edit rtsp-simple-server.yml to remove them or add your own streams. Check https://github.com/aler9/rtsp-simple-server for full documentation.
 
